@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.sakshi.fragment_landscape.MainActivity">
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent"
+       android:id="@+id/layout"
+       android:gravity="center"
+       android:orientation="vertical">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Layout 1"
+           android:id="@+id/layout1"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Layout 2"
+           android:id="@+id/layout2"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Layout 3"
+           android:id="@+id/layout3"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Layout 4"
+           android:id="@+id/layout4"/>
+   </LinearLayout>
+
+    <fragment
+        android:id="@+id/frag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:name="com.example.sakshi.fragment_landscape.Fragment1"></fragment>
+
+</LinearLayout>
